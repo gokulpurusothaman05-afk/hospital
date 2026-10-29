@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly</title>
+  <meta name="description" content="Discover Stackly Hospital's legacy of clinical innovation, compassionate patient recovery, and world-class healthcare infrastructure.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- ==================== SHARED HEADER ==================== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="site-logo">
+          <img src="assets/images/logo.webp" alt="Stackly Hospital Logo">
+          <span class="logo-text">Stackly</span>
+        </a>
+
+        <!-- 5 Nav List Items -->
+        <nav class="main-nav" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link active">About Us</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="doctors.html" class="nav-link">Doctors</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="login.html" class="auth-nav-link">
+            <span class="badge-dot"></span>
+            Portal Login
+          </a>
+          <a href="#book-appointment" class="btn btn-primary open-appointment-modal">
+            Get Appointment
+          </a>
+          <button class="mobile-toggle" aria-label="Toggle navigation drawer">
+            <div class="hamburger-box">
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav-drawer">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link active">About Us</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="doctors.html" class="mobile-nav-link">Doctors</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <a href="login.html" class="mobile-nav-link">Patient & Admin Login</a>
+      <a href="#book-appointment" class="btn btn-primary open-appointment-modal" style="margin-top: 10px;">Get Appointment</a>
+    </div>
+  </header>
+
+  <!-- ==================== SECTION 1: ABOUT HERO BANNER ==================== -->
+  <section class="hero-section" style="background: linear-gradient(180deg, var(--bg-alt) 0%, #ffffff 100%);">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="badge badge-accent">
+            <span class="badge-dot"></span>
+            Stackly Medical Legacy
+          </div>
+          <h1 class="hero-headline">
+            Pioneering <br>
+            <span class="text-primary">Medical Care</span>
+          </h1>
+          <p class="hero-desc">
+            For more than three decades, Stackly Hospital has stood as a beacon of clinical hope and surgical excellence, uniting empathetic patient recovery with transformative medical technologies.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#board" class="btn btn-primary">
+              Our Medical Board
+            </a>
+            <a href="services.html" class="btn btn-secondary">
+              Clinical Specialities
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="hero-image-container">
+            <img src="assets/images/about-team.webp" alt="Stackly Multidisciplinary Clinical Team">
+          </div>
+          <div class="hero-float-card">
+            <div class="hero-float-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M13 3l6 3v15M9 9h1M9 13h1M9 17h1M17 11h1M17 15h1"/></svg>
+            </div>
+            <div>
+              <div style="font-weight: 700; color: var(--secondary);">NABH & JCI Accredited</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Apex Indian & Global Quality Benchmarks</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 2: HERITAGE & DECADES OF EXCELLENCE ==================== -->
+  <section class="about-intro-section">
+    <div class="container">
+      <div class="about-intro-grid">
+        <div class="about-intro-media">
+          <img src="assets/images/single-image-1.webp" alt="Stackly Hospital Facilities" class="about-main-img">
+        </div>
+        <div class="about-intro-content">
+          <div class="section-subtitle">
+            <span class="badge-dot" style="background-color: var(--accent);"></span>
+            Our Foundation
+          </div>
+          <h2 class="section-title">Built on compassion, driven by science</h2>
+          <p>
+            Founded with an enduring mission to deliver accessible, top-tier tertiary healthcare across India, Stackly Hospital has evolved into an internationally recognized multi-specialty medical hub in Sector 62, Noida, Delhi NCR.
+          </p>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0;">
+            <div style="padding: 16px; background: var(--bg-alt); border-radius: var(--radius-md); border-left: 4px solid var(--primary);">
+              <h4 style="font-size: 1.1rem; margin-bottom: 4px;">Visionary Research</h4>
+              <p style="font-size: 0.9rem; margin: 0;">Over 240+ peer-reviewed clinical studies and therapeutic breakthroughs in Indian demographics.</p>
+            </div>
+            <div style="padding: 16px; background: var(--bg-alt); border-radius: var(--radius-md); border-left: 4px solid var(--accent);">
+              <h4 style="font-size: 1.1rem; margin-bottom: 4px;">Holistic Healing</h4>
+              <p style="font-size: 0.9rem; margin: 0;">Integrative recovery suites focusing on physical, mental, and nutritional health.</p>
+            </div>
+          </div>
+          <ul class="feature-check-list">
+            <li class="feature-check-item">
+              <span class="check-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              500+ Inpatient Beds equipped with continuous telemetry
+            </li>
+            <li class="feature-check-item">
+              <span class="check-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Rapid trauma resuscitation unit with zero wait times
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 3: INFRASTRUCTURE & FACILITIES ==================== -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-subtitle">
+          <span class="badge-dot" style="background-color: var(--accent);"></span>
+          High-Tech Campus
+        </div>
+        <h2 class="section-title">World-Class Hospital Infrastructure</h2>
+        <p>Purpose-built medical architecture engineered for patient comfort, infection prevention, and surgical precision.</p>
+      </div>
+
+      <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+        <!-- Facility 1 -->
+        <div class="service-card">
+          <div class="service-thumb" style="height: 240px;">
+            <img src="assets/images/facility-1.webp" alt="Smart ICU and Recovery Suites">
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Smart Intensive Care Units (ICU)</h3>
+            <p class="service-desc">
+              HEPA-filtered sterile rooms with AI-assisted patient vital monitors, negative pressure capability, and 1:1 specialist nursing.
+            </p>
+          </div>
+        </div>
+
+        <!-- Facility 2 -->
+        <div class="service-card">
+          <div class="service-thumb" style="height: 240px;">
+            <img src="assets/images/facility-2.webp" alt="High Resolution Diagnostic Imaging">
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">3T MRI & High-Speed CT Imaging</h3>
+            <p class="service-desc">
+              Next-generation non-invasive diagnostic scanners that deliver sub-millimeter anatomical precision in a soothing environment.
+            </p>
+          </div>
+        </div>
+
+        <!-- Facility 3 -->
+        <div class="service-card">
+          <div class="service-thumb" style="height: 240px;">
+            <img src="assets/images/facility-3.webp" alt="Robotic Surgery Theater">
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Robotic-Assisted Surgical Theaters</h3>
+            <p class="service-desc">
+              Ultra-precision robotic surgical suites providing minimally invasive interventions, reduced recovery time, and zero trauma.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 4: HOSPITAL CORE VALUES TICKER ==================== -->
+  <section class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-item">Clinical Integrity <img src="assets/images/icon-asterisk.webp" alt="" class="marquee-icon"></div>
+      <div class="marquee-item">Patient Empathy <img src="assets/images/icon-asterisk.webp" alt="" class="marquee-icon"></div>
+      <div class="marquee-item">Zero Infection Protocol <img src="assets/images/icon-asterisk.webp" alt="" class="marquee-icon"></div>
+      <div class="marquee-item">Rapid Triage <img src="assets/images/icon-asterisk.webp" alt="" class="marquee-icon"></div>
+      <div class="marquee-item">Transparent Healthcare <img src="assets/images/icon-asterisk.webp" alt="" class="marquee-icon"></div>
+      <div class="marquee-item">Global Accreditation <img src="assets/images/icon-asterisk.webp" alt="" class="marquee-icon"></div>
+      <!-- Duplicate -->
+      <div class="marquee-item">Clinical Integrity <img src="assets/images/icon-asterisk.webp" alt="" class="marquee-icon"></div>
+      <div class="marquee-item">Patient Empathy <img src="assets/images/icon-asterisk.webp" alt="" class="marquee-icon"></div>
+      <div class="marquee-item">Zero Infection Protocol <img src="assets/images/icon-asterisk.webp" alt="" class="marquee-icon"></div>
+      <div class="marquee-item">Rapid Triage <img src="assets/images/icon-asterisk.webp" alt="" class="marquee-icon"></div>
+      <div class="marquee-item">Transparent Healthcare <img src="assets/images/icon-asterisk.webp" alt="" class="marquee-icon"></div>
+      <div class="marquee-item">Global Accreditation <img src="assets/images/icon-asterisk.webp" alt="" class="marquee-icon"></div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 5: EXECUTIVE MEDICAL BOARD ==================== -->
+  <section class="doctors-section" id="board">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-subtitle">
+          <span class="badge-dot" style="background-color: var(--accent);"></span>
+          Executive Leadership
+        </div>
+        <h2 class="section-title">Chief Medical Directors & Leadership</h2>
+        <p>Our executive clinical directors oversee hospital governance, quality assurance, and surgical innovation.</p>
+      </div>
+
+      <div class="doctors-grid">
+        <div class="doctor-card">
+          <div class="doctor-thumb">
+            <img src="assets/images/doctor-4.webp" alt="Dr. Ananya Mukherjee">
+            <div class="doctor-badge-rating">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" style="display:inline-block; vertical-align:-1px;"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> 4.9/5.0
+            </div>
+          </div>
+          <div class="doctor-info">
+            <h3 class="doctor-name">Dr. Ananya Mukherjee</h3>
+            <div class="doctor-specialty">Director of Oncology & Clinical Research</div>
+            <div class="doctor-meta">
+              <span>AIIMS New Delhi / Tata Memorial</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="doctor-card">
+          <div class="doctor-thumb">
+            <img src="assets/images/doctor-5.webp" alt="Dr. Vikramaditya Rathore">
+            <div class="doctor-badge-rating">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" style="display:inline-block; vertical-align:-1px;"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> 4.8/5.0
+            </div>
+          </div>
+          <div class="doctor-info">
+            <h3 class="doctor-name">Dr. Vikramaditya Rathore</h3>
+            <div class="doctor-specialty">Head of Orthopedic & Robotic Surgery</div>
+            <div class="doctor-meta">
+              <span>MS Ortho (PGIMER Chandigarh)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="doctor-card">
+          <div class="doctor-thumb">
+            <img src="assets/images/doctor-6.webp" alt="Dr. Rajesh K. Nair">
+            <div class="doctor-badge-rating">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" style="display:inline-block; vertical-align:-1px;"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> 4.9/5.0
+            </div>
+          </div>
+          <div class="doctor-info">
+            <h3 class="doctor-name">Dr. Rajesh K. Nair</h3>
+            <div class="doctor-specialty">Chief of Neuro-Psychiatric Health</div>
+            <div class="doctor-meta">
+              <span>MD Psychiatry (NIMHANS Bengaluru)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 6: QUALITY STANDARDS & ACCREDITATIONS ==================== -->
+  <section class="about-intro-section" style="background: var(--bg-alt);">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-subtitle">
+          <span class="badge-dot" style="background-color: var(--accent);"></span>
+          Quality & Safety
+        </div>
+        <h2 class="section-title">Highest International Healthcare Standards</h2>
+        <p>Stackly Hospital adheres to strict global clinical benchmarks to guarantee patient safety at every touchpoint.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
+        <div style="background: #ffffff; padding: 30px; border-radius: var(--radius-lg); border: 1px solid var(--border-light); text-align: center;">
+          <div class="svg-icon" style="color: var(--primary); margin-bottom: 12px;">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 8px;">NABH Sterile Environment</h3>
+          <p style="font-size: 0.95rem;">Laminar airflow positive pressure theaters maintaining 99.99% particulate-free surgical air.</p>
+        </div>
+
+        <div style="background: #ffffff; padding: 30px; border-radius: var(--radius-lg); border: 1px solid var(--border-light); text-align: center;">
+          <div class="svg-icon" style="color: var(--accent); margin-bottom: 12px;">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.31M14 2v7.31M8.5 2h7M14 9.3a6.5 6.5 0 1 1-4 0M5.52 16h12.96"/></svg>
+          </div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 8px;">NABL Automated Pathology</h3>
+          <p style="font-size: 0.95rem;">Robotic barcoding and AI-assisted sample validation ensuring zero cross-contamination.</p>
+        </div>
+
+        <div style="background: #ffffff; padding: 30px; border-radius: var(--radius-lg); border: 1px solid var(--border-light); text-align: center;">
+          <div class="svg-icon" style="color: #f59e0b; margin-bottom: 12px;">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 8px;">ABDM Digital Health Record</h3>
+          <p style="font-size: 0.95rem;">Ayushman Bharat Digital Mission compliant electronic health record portals safeguarding all diagnostics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 7: EMERGENCY & COMMUNITY OUTREACH CTA ==================== -->
+  <section class="cta-helpline-section">
+    <div class="container">
+      <div class="cta-helpline-box">
+        <div>
+          <div class="badge" style="background: rgba(255,255,255,0.15); color: #ffffff; margin-bottom: 12px;">
+            <span class="badge-dot" style="background: #10b981;"></span>
+            Community Healthcare
+          </div>
+          <h2>Join the Stackly Patient Wellness Community</h2>
+          <p>Schedule a routine health checkup or consult our preventive care team today for long-term health vitality.</p>
+        </div>
+
+        <div class="cta-contact-numbers">
+          <a href="#book-appointment" class="btn btn-primary open-appointment-modal">
+            Book Health Screening
+          </a>
+          <a href="contact.html" class="btn btn-secondary" style="border-color: rgba(255,255,255,0.4); color: #ffffff;">
+            Find Our Hospital
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SHARED FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <!-- Appointment Card Banner in Footer -->
+      <div class="footer-appointment-banner">
+        <div class="footer-appointment-text">
+          <h3>Book an Appointment with Stackly</h3>
+          <p>Secure prompt access to world-class hospital departments and board-certified consultants.</p>
+        </div>
+        <a href="#book-appointment" class="btn btn-primary open-appointment-modal">
+          Schedule Visit
+        </a>
+      </div>
+
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand & Social Media -->
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="assets/images/logo.webp" alt="Stackly Hospital Logo">
+            <span class="logo-text">Stackly</span>
+          </a>
+          <p>
+            Stackly Hospital is committed to delivering state-of-the-art medical interventions, compassionate nursing, and high clinical standards across all specialties.
+          </p>
+          <div class="footer-social-box">
+            <div class="footer-social-title">Connect With Us</div>
+            <div class="footer-social-links">
+              <a href="404.html" class="social-link-btn" aria-label="Facebook">
+                <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="404.html" class="social-link-btn" aria-label="X (Twitter)">
+                <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 22.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="404.html" class="social-link-btn" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href="404.html" class="social-link-btn" aria-label="Instagram">
+                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+              <a href="404.html" class="social-link-btn" aria-label="YouTube">
+                <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div class="footer-col">
+          <h4>Hospital Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="about.html">About Stackly</a></li>
+            <li><a href="services.html">Clinical Services</a></li>
+            <li><a href="doctors.html">Specialist Faculty</a></li>
+            <li><a href="contact.html">Emergency & Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Portals & Utilities -->
+        <div class="footer-col">
+          <h4>Patient Portals</h4>
+          <ul class="footer-links">
+            <li><a href="login.html">Patient Client Login</a></li>
+            <li><a href="login.html">Hospital Admin Portal</a></li>
+            <li><a href="signup.html">Register New Account</a></li>
+            <li><a href="404.html">404 Error Status</a></li>
+            <li><a href="404.html">Licensing & Accreditations</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter Form (Redirects to 404 per requirement) -->
+        <div class="footer-col footer-newsletter">
+          <h4>Subscribe to Updates</h4>
+          <p>Receive health insights, medical research bulletins, and wellness advisories directly in your inbox.</p>
+          <form class="footer-form" action="404.html" method="GET">
+            <input type="email" class="footer-input" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-accent btn-sm">Subscribe Now</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2024. <a href="index.html" style="color: #ffffff; font-weight: 600;">Stackly</a> Hospital & Medical Center. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+          <a href="404.html">Patient Rights</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Appointment Modal -->
+  <div class="modal-overlay" id="appointment-modal">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close appointment modal">&times;</button>
+      <div class="modal-header">
+        <span class="badge badge-accent">Priority Booking</span>
+        <h3 class="modal-title">Book a Clinical Appointment</h3>
+        <p class="modal-subtitle">Choose your department and doctor for immediate confirmation.</p>
+      </div>
+
+      <form action="404.html" method="GET">
+        <div class="form-group">
+          <label class="form-label">Full Name <span class="required-dot">*</span></label>
+          <input type="text" class="form-control" placeholder="e.g. John Doe" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address <span class="required-dot">*</span></label>
+          <input type="email" class="form-control" placeholder="e.g. john@gmail.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Department / Specialty <span class="required-dot">*</span></label>
+          <select class="form-control" required>
+            <option value="">Select Specialty</option>
+            <option>Cardiology</option>
+            <option>Neurology</option>
+            <option>Ophthalmology</option>
+            <option>Dental Surgery</option>
+            <option>Orthopedics</option>
+            <option>General Medicine</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Preferred Date <span class="required-dot">*</span></label>
+          <input type="date" class="form-control" required>
+        </div>
+        <button type="submit" class="modal-submit-btn">
+          Confirm Appointment Request →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

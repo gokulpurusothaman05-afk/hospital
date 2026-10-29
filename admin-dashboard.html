@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly</title>
+  <meta name="description" content="Central administrative dashboard for Stackly Hospital. Monitor inpatient admissions, doctor duty rosters, and emergency operations.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <div class="dashboard-wrapper">
+    <!-- Admin Sidebar -->
+    <aside class="dashboard-sidebar">
+      <div class="sidebar-brand">
+        <a href="index.html" class="sidebar-logo">
+          <img src="assets/images/logo.webp" alt="Stackly Hospital Logo">
+          <span class="logo-text">Stackly</span>
+        </a>
+      </div>
+
+      <div class="sidebar-user-card">
+        <img src="assets/images/user-admin.webp" alt="Admin Avatar" class="user-avatar dashboard-user-avatar">
+        <div class="user-meta-info">
+          <div class="user-meta-name dashboard-user-name">Hospital Director</div>
+          <div class="user-meta-email dashboard-user-email">admin@gmail.com</div>
+        </div>
+      </div>
+
+      <ul class="sidebar-menu">
+        <li class="sidebar-menu-item active">
+          <a href="admin-dashboard.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:-2px; margin-right:8px;"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            Executive Analytics
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="404.html" class="btn-dashboard-action">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:-2px; margin-right:8px;"><path d="M3 21h18M5 21V7l8-4v18M13 3l6 3v15M9 9h1M9 13h1M9 17h1M17 11h1M17 15h1"/></svg>
+            Patient Admissions
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="404.html" class="btn-dashboard-action">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:-2px; margin-right:8px;"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+            Physician Rosters
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="404.html" class="btn-dashboard-action">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:-2px; margin-right:8px;"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><line x1="8" y1="6" x2="8.01" y2="6"/><line x1="16" y1="6" x2="16.01" y2="6"/><line x1="8" y1="10" x2="8.01" y2="10"/><line x1="16" y1="10" x2="16.01" y2="10"/><line x1="8" y1="14" x2="8.01" y2="14"/><line x1="16" y1="14" x2="16.01" y2="14"/></svg>
+            Clinical Units
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="404.html" class="btn-dashboard-action">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:-2px; margin-right:8px;"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            Hospital Revenue
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="index.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:-2px; margin-right:8px;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            Back to Website
+          </a>
+        </li>
+      </ul>
+
+      <button type="button" class="sidebar-logout-btn logout-trigger">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:-2px; margin-right:8px;"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        Log Out
+      </button>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="dashboard-main">
+      <!-- Topbar -->
+      <header class="dashboard-topbar">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <button class="dashboard-mobile-toggle" aria-label="Toggle Dashboard Menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+          <h2>Hospital Administrator Management System</h2>
+        </div>
+
+        <div class="topbar-actions">
+          <span class="badge" style="background:#fee2e2; color:#991b1b;">
+            <span class="badge-dot" style="background:#ef4444;"></span>
+            System Status: 100% Operational
+          </span>
+          <a href="index.html" class="btn btn-secondary btn-sm">Exit to Website</a>
+        </div>
+      </header>
+
+      <div class="dashboard-content">
+        <!-- Welcome Banner with Dynamic Gmail Username -->
+        <div class="welcome-banner" style="background: linear-gradient(135deg, var(--secondary) 0%, var(--primary-dark) 100%);">
+          <div>
+            <h1>Welcome, Administrator <span class="dashboard-user-name">Hospital Director</span>!</h1>
+            <p>Real-time hospital bed monitoring, active surgical theater rosters, and emergency trauma triage stream.</p>
+            <div class="welcome-badge-gmail">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline-block; vertical-align:-2px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Admin ID: <strong class="dashboard-user-email">admin@gmail.com</strong>
+            </div>
+          </div>
+          <a href="404.html" class="btn btn-primary btn-dashboard-action">
+            + Discharge / Admit Patient
+          </a>
+        </div>
+
+        <!-- Metric Cards -->
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></svg>
+            </div>
+            <div>
+              <div class="metric-val">348</div>
+              <div class="metric-label">Inpatients Admitted</div>
+            </div>
+          </div>
+
+          <div class="metric-card accent">
+            <div class="metric-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+            </div>
+            <div>
+              <div class="metric-val">42</div>
+              <div class="metric-label">Physicians On-Duty</div>
+            </div>
+          </div>
+
+          <div class="metric-card warning">
+            <div class="metric-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="18" y="3" width="4" height="18"/><rect x="10" y="8" width="4" height="13"/><rect x="2" y="13" width="4" height="8"/></svg>
+            </div>
+            <div>
+              <div class="metric-val">84%</div>
+              <div class="metric-label">ICU Bed Occupancy</div>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M4.93 4.93l2.83 2.83M2 12h4M20 12h4M19.07 4.93l-2.83 2.83M6 12a6 6 0 1 1 12 0v5H6v-5z"/><line x1="4" y1="21" x2="20" y2="21"/></svg>
+            </div>
+            <div>
+              <div class="metric-val">6</div>
+              <div class="metric-label">Emergency Queue</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 1: Live Patient Admission Queue -->
+        <div class="card-section" id="admissions">
+          <div class="card-section-header">
+            <div>
+              <h3 class="card-section-title">Live Patient Admission & Triage Stream</h3>
+              <p style="font-size: 0.9rem; margin-top: 2px;">Real-time inpatient tracking across all clinical towers</p>
+            </div>
+            <a href="404.html" class="btn btn-secondary btn-sm btn-dashboard-action">Export Census (CSV)</a>
+          </div>
+
+          <div class="data-table-wrapper">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Patient Name</th>
+                  <th>MRN Code</th>
+                  <th>Admitted Ward</th>
+                  <th>Attending Physician</th>
+                  <th>Triage Priority</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Rajesh Singhania</strong></td>
+                  <td>#MRN-9021</td>
+                  <td>Cardiology ICU (Bed 04)</td>
+                  <td>Dr. Naina Kulkarni</td>
+                  <td><span class="status-badge" style="background:#fee2e2; color:#991b1b;">High Priority</span></td>
+                  <td><span class="status-badge active">Under Observation</span></td>
+                  <td><a href="404.html" class="btn btn-secondary btn-sm btn-dashboard-action">Review Chart</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Sunita Deshmukh</strong></td>
+                  <td>#MRN-9022</td>
+                  <td>Neurology Suite (Bed 12)</td>
+                  <td>Dr. Rohan Varma</td>
+                  <td><span class="status-badge" style="background:#fef3c7; color:#92400e;">Medium</span></td>
+                  <td><span class="status-badge confirmed">Stable</span></td>
+                  <td><a href="404.html" class="btn btn-secondary btn-sm btn-dashboard-action">Review Chart</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Arvind Swaminathan</strong></td>
+                  <td>#MRN-9023</td>
+                  <td>Orthopedics Step-down</td>
+                  <td>Dr. Vikramaditya Rathore</td>
+                  <td><span class="status-badge" style="background:#d1fae5; color:#065f46;">Low</span></td>
+                  <td><span class="status-badge completed">Discharge Ready</span></td>
+                  <td><a href="404.html" class="btn btn-secondary btn-sm btn-dashboard-action">Approve Discharge</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Kavita Sharma</strong></td>
+                  <td>#MRN-9024</td>
+                  <td>Maternity Ward (Bed 08)</td>
+                  <td>Dr. Priya Sharma</td>
+                  <td><span class="status-badge" style="background:#fee2e2; color:#991b1b;">High Priority</span></td>
+                  <td><span class="status-badge active">In Labor</span></td>
+                  <td><a href="404.html" class="btn btn-secondary btn-sm btn-dashboard-action">Review Chart</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Section 2: On-Duty Doctor Rosters -->
+        <div class="card-section" id="roster">
+          <div class="card-section-header">
+            <div>
+              <h3 class="card-section-title">Physician On-Duty Shifts & Availability</h3>
+              <p style="font-size: 0.9rem; margin-top: 2px;">Active department consultants and surgical on-call faculty</p>
+            </div>
+            <a href="404.html" class="btn btn-primary btn-sm btn-dashboard-action">+ Assign Shift</a>
+          </div>
+
+          <div class="data-table-wrapper">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Consultant Name</th>
+                  <th>Department</th>
+                  <th>Current Shift</th>
+                  <th>Active Inpatients</th>
+                  <th>On-Call Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Dr. Priya Sharma</strong></td>
+                  <td>Gynaecology & Obstetrics</td>
+                  <td>Day Shift (08:00 – 16:00)</td>
+                  <td>14 Patients</td>
+                  <td><span class="status-badge active">On Floor</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Dr. Rohan Varma</strong></td>
+                  <td>Neurology & Stroke</td>
+                  <td>24-Hr On-Call</td>
+                  <td>18 Patients</td>
+                  <td><span class="status-badge active">Active in Surgery</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Dr. Naina Kulkarni</strong></td>
+                  <td>Cardiology & Cath Lab</td>
+                  <td>Day Shift (08:00 – 16:00)</td>
+                  <td>22 Patients</td>
+                  <td><span class="status-badge active">Consultations</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Dr. Vikramaditya Rathore</strong></td>
+                  <td>Orthopedic Surgery</td>
+                  <td>Evening Shift (16:00 – 00:00)</td>
+                  <td>9 Patients</td>
+                  <td><span class="status-badge pending">Reporting Soon</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Section 3: Department Live Status -->
+        <div class="card-section" id="departments">
+          <div class="card-section-header">
+            <div>
+              <h3 class="card-section-title">Clinical Units Capacity & Equipment Status</h3>
+              <p style="font-size: 0.9rem; margin-top: 2px;">Infrastructure readiness metrics</p>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
+            <div style="padding: 20px; background: var(--bg-alt); border-radius: var(--radius-md); border-left: 4px solid var(--primary);">
+              <h4>Cardiology Cath Lab</h4>
+              <p style="font-size: 0.85rem; margin-top: 4px;">Operational Capacity: 92%</p>
+              <div style="height: 6px; background: #e5e7eb; border-radius: 3px; margin-top: 8px;">
+                <div style="width: 92%; height: 100%; background: var(--primary); border-radius: 3px;"></div>
+              </div>
+            </div>
+
+            <div style="padding: 20px; background: var(--bg-alt); border-radius: var(--radius-md); border-left: 4px solid var(--accent);">
+              <h4>Smart ICU Wing</h4>
+              <p style="font-size: 0.85rem; margin-top: 4px;">Occupancy: 84% (4 Beds Free)</p>
+              <div style="height: 6px; background: #e5e7eb; border-radius: 3px; margin-top: 8px;">
+                <div style="width: 84%; height: 100%; background: var(--accent); border-radius: 3px;"></div>
+              </div>
+            </div>
+
+            <div style="padding: 20px; background: var(--bg-alt); border-radius: var(--radius-md); border-left: 4px solid #f59e0b;">
+              <h4>Robotic Surgery OT 1 & 2</h4>
+              <p style="font-size: 0.85rem; margin-top: 4px;">Utilization: 100% (Active Case)</p>
+              <div style="height: 6px; background: #e5e7eb; border-radius: 3px; margin-top: 8px;">
+                <div style="width: 100%; height: 100%; background: #f59e0b; border-radius: 3px;"></div>
+              </div>
+            </div>
+
+            <div style="padding: 20px; background: var(--bg-alt); border-radius: var(--radius-md); border-left: 4px solid #ef4444;">
+              <h4>Emergency Trauma Bay</h4>
+              <p style="font-size: 0.85rem; margin-top: 4px;">Ready Resuscitation Beds: 6 Available</p>
+              <div style="height: 6px; background: #e5e7eb; border-radius: 3px; margin-top: 8px;">
+                <div style="width: 60%; height: 100%; background: #ef4444; border-radius: 3px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

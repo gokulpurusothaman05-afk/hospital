@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly</title>
+  <meta name="description" content="Get in touch with Stackly Hospital. Reach our 24/7 emergency trauma helpline, outpatient consultation desk, and clinical campus in New York.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- ==================== SHARED HEADER ==================== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="site-logo">
+          <img src="assets/images/logo.webp" alt="Stackly Hospital Logo">
+          <span class="logo-text">Stackly</span>
+        </a>
+
+        <!-- 5 Nav List Items -->
+        <nav class="main-nav" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="doctors.html" class="nav-link">Doctors</a>
+          <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="login.html" class="auth-nav-link">
+            <span class="badge-dot"></span>
+            Portal Login
+          </a>
+          <a href="#book-appointment" class="btn btn-primary open-appointment-modal">
+            Get Appointment
+          </a>
+          <button class="mobile-toggle" aria-label="Toggle navigation drawer">
+            <div class="hamburger-box">
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav-drawer">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="doctors.html" class="mobile-nav-link">Doctors</a>
+      <a href="contact.html" class="mobile-nav-link active">Contact</a>
+      <a href="login.html" class="mobile-nav-link">Patient & Admin Login</a>
+      <a href="#book-appointment" class="btn btn-primary open-appointment-modal" style="margin-top: 10px;">Get Appointment</a>
+    </div>
+  </header>
+
+  <!-- ==================== SECTION 1: CONTACT HERO BANNER ==================== -->
+  <section class="hero-section" style="background: linear-gradient(180deg, var(--bg-alt) 0%, #ffffff 100%);">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="badge badge-accent">
+            <span class="badge-dot"></span>
+            24/7 Rapid Assistance
+          </div>
+          <h1 class="hero-headline">
+            Contact <br>
+            <span class="text-primary">Stackly Hospital</span>
+          </h1>
+          <p class="hero-desc">
+            We are here for you around the clock. Whether you require immediate emergency ambulance dispatch, outpatient consultation booking, or medical records assistance, our dedicated desk is ready.
+          </p>
+          <div class="hero-cta-group">
+            <a href="tel:+17891234567" class="btn btn-primary">
+              Call Emergency Helpline
+            </a>
+            <a href="#inquiry-form" class="btn btn-secondary">
+              Send Message
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="hero-image-container">
+            <img src="assets/images/service-emergency.webp" alt="Stackly Emergency Triage and Contact Desk">
+          </div>
+          <div class="hero-float-card">
+            <div class="hero-float-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/><path d="M8 7v4M6 9h4"/></svg>
+            </div>
+            <div>
+              <div style="font-weight: 700; color: var(--secondary);">Rapid Response Unit</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Avg. Dispatch: Under 8 Mins across NCR</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 2: DIRECT CHANNELS GRID ==================== -->
+  <section class="services-section" style="padding: 80px 0;">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-subtitle">
+          <span class="badge-dot" style="background-color: var(--accent);"></span>
+          Direct Channels
+        </div>
+        <h2 class="section-title">Reach Our Specialized Desks</h2>
+        <p>Connect immediately with the right healthcare department in Noida, Delhi NCR.</p>
+      </div>
+
+      <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+        <div class="service-card" style="padding: 30px; text-align: center;">
+          <div class="svg-icon" style="color: #ef4444; margin-bottom: 12px;">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M4.93 4.93l2.83 2.83M2 12h4M20 12h4M19.07 4.93l-2.83 2.83M6 12a6 6 0 1 1 12 0v5H6v-5z"/><line x1="4" y1="21" x2="20" y2="21"/></svg>
+          </div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 8px;">24/7 Emergency Trauma</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 16px;">Direct ambulance hotline and acute cardiac resuscitation triage.</p>
+          <a href="tel:+911145678900" style="font-weight: 700; color: #ef4444; font-size: 1.1rem;">+91 (011) 4567-8900</a>
+        </div>
+
+        <div class="service-card" style="padding: 30px; text-align: center;">
+          <div class="svg-icon" style="color: var(--primary); margin-bottom: 12px;">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Outpatient Appointments</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 16px;">Schedule clinic visits, health checkups, and diagnostic screenings.</p>
+          <a href="#book-appointment" class="open-appointment-modal" style="font-weight: 700; color: var(--primary); font-size: 1.1rem;">Schedule Now →</a>
+        </div>
+
+        <div class="service-card" style="padding: 30px; text-align: center;">
+          <div class="svg-icon" style="color: var(--accent); margin-bottom: 12px;">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 8px;">International & Corporate</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 16px;">Global concierge, medical visa letters, and corporate wellness.</p>
+          <a href="404.html" style="font-weight: 700; color: var(--accent); font-size: 1rem;">care@stackly.in</a>
+        </div>
+
+        <div class="service-card" style="padding: 30px; text-align: center;">
+          <div class="svg-icon" style="color: #f59e0b; margin-bottom: 12px;">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          </div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Cashless TPA & Insurance Desk</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 16px;">Pre-authorizations, Star Health, PM-JAY, and corporate claims.</p>
+          <a href="404.html" style="font-weight: 700; color: #f59e0b; font-size: 1.1rem;">Toll-Free: 1800-123-7822</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 3: CAMPUS LOCATION & VISITING HOURS ==================== -->
+  <section class="about-intro-section">
+    <div class="container">
+      <div class="about-intro-grid">
+        <div class="about-intro-content">
+          <div class="section-subtitle">
+            <span class="badge-dot" style="background-color: var(--accent);"></span>
+            Campus Directions
+          </div>
+          <h2 class="section-title">Stackly Hospital Main Medical Campus</h2>
+          <p>
+            Conveniently situated in Sector 62, Institutional Area, Noida, Delhi NCR, our campus features multi-level covered patient parking, direct Metro accessibility (Noida Electronic City Metro Station), and a dedicated 24/7 emergency trauma bay.
+          </p>
+
+          <div style="margin: 20px 0; display: flex; flex-direction: column; gap: 14px;">
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <span class="svg-icon" style="color: var(--primary); margin-top: 3px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <div>
+                <strong>Physical Address:</strong><br>
+                Plot No. 12, Sector 62, Institutional Area, Noida, Delhi NCR – 201309, India
+              </div>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <span class="svg-icon" style="color: var(--accent); margin-top: 3px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </span>
+              <div>
+                <strong>Visiting Hours:</strong><br>
+                General Inpatient: 10:00 AM – 8:00 PM Daily<br>
+                Intensive Care Unit (ICU): 11:00 AM – 1:00 PM & 5:00 PM – 7:00 PM
+              </div>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <span class="svg-icon" style="color: #f59e0b; margin-top: 3px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H7.5a1 1 0 0 0-.8.4L4 11l-5.16.86a1 1 0 0 0-.84.99V16h3"/><circle cx="6.5" cy="16.5" r="2.5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg>
+              </span>
+              <div>
+                <strong>Valet & Parking:</strong><br>
+                Complimentary 2-hour parking for patients and families with validated OPD slip.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-intro-media">
+          <div style="background: var(--bg-alt); border-radius: var(--radius-xl); padding: 30px; border: 1px solid var(--border-light); box-shadow: var(--shadow-md);">
+            <div style="background: var(--primary); color: #ffffff; padding: 20px; border-radius: var(--radius-md); text-align: center; margin-bottom: 20px;">
+              <h3 style="color: #ffffff; margin-bottom: 4px;">Main Reception & Inpatient Triage</h3>
+              <p style="color: rgba(255,255,255,0.85); font-size: 0.9rem;">Building A, Level 1 (Follow Red Corridor)</p>
+            </div>
+            <img src="assets/images/facility-1.webp" alt="Stackly Reception Lobby" style="border-radius: var(--radius-md); height: 260px; width: 100%; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 4: LOOPING CONTACT TICKER ==================== -->
+  <section class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-item">Emergency Hotline: +1(789) -123-4567 <img src="assets/images/icon-asterisk.webp" alt="" class="marquee-icon"></div>
+      <div class="marquee-item">752 New South Head Rd, New York <img src="assets/images/icon-asterisk.webp" alt="" class="marquee-icon"></div>
+      <div class="marquee-item">Ambulance Dispatch: Dial 911 or Extension 01 <img src="assets/images/icon-asterisk.webp" alt="" class="marquee-icon"></div>
+      <div class="marquee-item">Email: info@example.com <img src="assets/images/icon-asterisk.webp" alt="" class="marquee-icon"></div>
+      <!-- Duplicate -->
+      <div class="marquee-item">Emergency Hotline: +1(789) -123-4567 <img src="assets/images/icon-asterisk.webp" alt="" class="marquee-icon"></div>
+      <div class="marquee-item">752 New South Head Rd, New York <img src="assets/images/icon-asterisk.webp" alt="" class="marquee-icon"></div>
+      <div class="marquee-item">Ambulance Dispatch: Dial 911 or Extension 01 <img src="assets/images/icon-asterisk.webp" alt="" class="marquee-icon"></div>
+      <div class="marquee-item">Email: info@example.com <img src="assets/images/icon-asterisk.webp" alt="" class="marquee-icon"></div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 5: INQUIRY & FEEDBACK FORM ==================== -->
+  <!-- Note: All forms except login redirect to 404.html per requirement -->
+  <section class="about-intro-section" id="inquiry-form" style="background: var(--bg-alt);">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-subtitle">
+          <span class="badge-dot" style="background-color: var(--accent);"></span>
+          Send A Message
+        </div>
+        <h2 class="section-title">Patient Inquiry & Direct Communication</h2>
+        <p>Send our clinical care navigators your questions or feedback.</p>
+      </div>
+
+      <div style="max-width: 720px; margin: 0 auto; background: #ffffff; padding: 44px; border-radius: var(--radius-xl); box-shadow: var(--shadow-md); border: 1px solid var(--border-light);">
+        <form action="404.html" method="GET">
+          <div class="form-row-2">
+            <div class="form-group">
+              <label class="form-label">Your Name <span class="required-dot">*</span></label>
+              <input type="text" class="form-control" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address <span class="required-dot">*</span></label>
+              <input type="email" class="form-control" placeholder="john@gmail.com" required>
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label class="form-label">Phone Number <span class="required-dot">*</span></label>
+              <input type="tel" class="form-control" placeholder="+1 (789) 000-0000" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Clinical Department <span class="required-dot">*</span></label>
+              <select class="form-control" required>
+                <option value="">Choose department</option>
+                <option>General Medicine</option>
+                <option>Cardiology</option>
+                <option>Neurology</option>
+                <option>Surgery & Trauma</option>
+                <option>Billing & Insurance</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Your Message / Condition Summary <span class="required-dot">*</span></label>
+            <textarea class="form-control" rows="4" placeholder="How can our clinical team help you today?" required></textarea>
+          </div>
+
+          <button type="submit" class="modal-submit-btn">
+            Submit Message to Care Team →
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 6: EXTENSION DIRECTORY ==================== -->
+  <section class="services-section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-subtitle">
+          <span class="badge-dot" style="background-color: var(--accent);"></span>
+          Quick Extensions
+        </div>
+        <h2 class="section-title">Hospital Department Phone Guide</h2>
+        <p>Dial our main switchboard and enter the corresponding extension for instant connection.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
+        <div style="background: var(--bg-alt); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--primary);">
+          <div style="font-weight: 700; color: var(--secondary);">Cardiology Ward</div>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">Ext: 2101</div>
+        </div>
+        <div style="background: var(--bg-alt); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--accent);">
+          <div style="font-weight: 700; color: var(--secondary);">Neurology Clinic</div>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">Ext: 2102</div>
+        </div>
+        <div style="background: var(--bg-alt); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid #f59e0b;">
+          <div style="font-weight: 700; color: var(--secondary);">Orthopedic Clinic</div>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">Ext: 2103</div>
+        </div>
+        <div style="background: var(--bg-alt); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid #ef4444;">
+          <div style="font-weight: 700; color: var(--secondary);">ICU Duty Desk</div>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">Ext: 1009</div>
+        </div>
+        <div style="background: var(--bg-alt); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--primary);">
+          <div style="font-weight: 700; color: var(--secondary);">Inpatient Pharmacy</div>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">Ext: 3044</div>
+        </div>
+        <div style="background: var(--bg-alt); padding: 20px; border-radius: var(--radius-md); border-left: 4px solid var(--accent);">
+          <div style="font-weight: 700; color: var(--secondary);">Pathology Reports</div>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">Ext: 3088</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 7: EMERGENCY RESPONSE & AMBULANCE CTA ==================== -->
+  <section class="cta-helpline-section">
+    <div class="container">
+      <div class="cta-helpline-box">
+        <div>
+          <div class="badge" style="background: rgba(255,255,255,0.15); color: #ffffff; margin-bottom: 12px;">
+            <span class="badge-dot" style="background: #ef4444;"></span>
+            Immediate Crisis Support
+          </div>
+          <h2>Critical Medical Emergency? Do Not Wait.</h2>
+          <p>Our fleet of advanced cardiac life support (ACLS) ambulances are positioned across the city for rapid dispatch.</p>
+        </div>
+
+        <div class="cta-contact-numbers">
+          <a href="tel:+911145678900" class="phone-link">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:-3px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +91 (011) 4567-8900 / 1800-123-7822
+          </a>
+          <div style="font-size: 0.85rem; color: rgba(255,255,255,0.8);">
+            Paramedic dispatch coordinates available 24/7/365 across Delhi NCR
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SHARED FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <!-- Appointment Card Banner in Footer -->
+      <div class="footer-appointment-banner">
+        <div class="footer-appointment-text">
+          <h3>Book an Appointment with Stackly</h3>
+          <p>Secure prompt access to world-class hospital departments and board-certified consultants.</p>
+        </div>
+        <a href="#book-appointment" class="btn btn-primary open-appointment-modal">
+          Schedule Visit
+        </a>
+      </div>
+
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand & Social Media -->
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="assets/images/logo.webp" alt="Stackly Hospital Logo">
+            <span class="logo-text">Stackly</span>
+          </a>
+          <p>
+            Stackly Hospital is committed to delivering state-of-the-art medical interventions, compassionate nursing, and high clinical standards across all specialties.
+          </p>
+          <div class="footer-social-box">
+            <div class="footer-social-title">Connect With Us</div>
+            <div class="footer-social-links">
+              <a href="404.html" class="social-link-btn" aria-label="Facebook">
+                <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="404.html" class="social-link-btn" aria-label="X (Twitter)">
+                <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 22.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="404.html" class="social-link-btn" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href="404.html" class="social-link-btn" aria-label="Instagram">
+                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+              <a href="404.html" class="social-link-btn" aria-label="YouTube">
+                <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div class="footer-col">
+          <h4>Hospital Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="about.html">About Stackly</a></li>
+            <li><a href="services.html">Clinical Services</a></li>
+            <li><a href="doctors.html">Specialist Faculty</a></li>
+            <li><a href="contact.html">Emergency & Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Portals & Utilities -->
+        <div class="footer-col">
+          <h4>Patient Portals</h4>
+          <ul class="footer-links">
+            <li><a href="login.html">Patient Client Login</a></li>
+            <li><a href="login.html">Hospital Admin Portal</a></li>
+            <li><a href="signup.html">Register New Account</a></li>
+            <li><a href="404.html">404 Error Status</a></li>
+            <li><a href="404.html">Licensing & Accreditations</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter Form (Redirects to 404 per requirement) -->
+        <div class="footer-col footer-newsletter">
+          <h4>Subscribe to Updates</h4>
+          <p>Receive health insights, medical research bulletins, and wellness advisories directly in your inbox.</p>
+          <form class="footer-form" action="404.html" method="GET">
+            <input type="email" class="footer-input" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-accent btn-sm">Subscribe Now</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2024. <a href="index.html" style="color: #ffffff; font-weight: 600;">Stackly</a> Hospital & Medical Center. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+          <a href="404.html">Patient Rights</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Appointment Modal -->
+  <div class="modal-overlay" id="appointment-modal">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close appointment modal">&times;</button>
+      <div class="modal-header">
+        <span class="badge badge-accent">Priority Booking</span>
+        <h3 class="modal-title">Book a Clinical Appointment</h3>
+        <p class="modal-subtitle">Choose your department and doctor for immediate confirmation.</p>
+      </div>
+
+      <form action="404.html" method="GET">
+        <div class="form-group">
+          <label class="form-label">Full Name <span class="required-dot">*</span></label>
+          <input type="text" class="form-control" placeholder="e.g. John Doe" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address <span class="required-dot">*</span></label>
+          <input type="email" class="form-control" placeholder="e.g. john@gmail.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Department / Specialty <span class="required-dot">*</span></label>
+          <select class="form-control" required>
+            <option value="">Select Specialty</option>
+            <option>Cardiology</option>
+            <option>Neurology</option>
+            <option>Ophthalmology</option>
+            <option>Dental Surgery</option>
+            <option>Orthopedics</option>
+            <option>General Medicine</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Preferred Date <span class="required-dot">*</span></label>
+          <input type="date" class="form-control" required>
+        </div>
+        <button type="submit" class="modal-submit-btn">
+          Confirm Appointment Request →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

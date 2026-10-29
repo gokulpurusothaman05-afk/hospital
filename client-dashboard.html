@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly</title>
+  <meta name="description" content="Personalized patient health portal for Stackly Hospital. Track medical appointments, test results, and prescriptions.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <div class="dashboard-wrapper">
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar">
+      <div class="sidebar-brand">
+        <a href="index.html" class="sidebar-logo">
+          <img src="assets/images/logo.webp" alt="Stackly Hospital Logo">
+          <span class="logo-text">Stackly</span>
+        </a>
+      </div>
+
+      <div class="sidebar-user-card">
+        <img src="assets/images/user-client.webp" alt="Patient Avatar" class="user-avatar dashboard-user-avatar">
+        <div class="user-meta-info">
+          <div class="user-meta-name dashboard-user-name">Valued Patient</div>
+          <div class="user-meta-email dashboard-user-email">patient@gmail.com</div>
+        </div>
+      </div>
+
+      <ul class="sidebar-menu">
+        <li class="sidebar-menu-item active">
+          <a href="client-dashboard.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:-2px; margin-right:8px;"><rect x="18" y="3" width="4" height="18"/><rect x="10" y="8" width="4" height="13"/><rect x="2" y="13" width="4" height="8"/></svg>
+            Overview & Vitals
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="404.html" class="btn-dashboard-action">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:-2px; margin-right:8px;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            My Appointments
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="404.html" class="btn-dashboard-action">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:-2px; margin-right:8px;"><rect x="3" y="3" width="18" height="18" rx="9"/><line x1="7.5" y1="7.5" x2="16.5" y2="16.5"/></svg>
+            Prescriptions
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="404.html" class="btn-dashboard-action">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:-2px; margin-right:8px;"><path d="M10 2v7.31M14 2v7.31M8.5 2h7M14 9.3a6.5 6.5 0 1 1-4 0M5.52 16h12.96"/></svg>
+            Lab Test Results
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="404.html" class="btn-dashboard-action">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:-2px; margin-right:8px;"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            Hospital Invoices
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="index.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:-2px; margin-right:8px;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            Back to Website
+          </a>
+        </li>
+      </ul>
+
+      <button type="button" class="sidebar-logout-btn logout-trigger">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:-2px; margin-right:8px;"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        Log Out
+      </button>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="dashboard-main">
+      <!-- Topbar -->
+      <header class="dashboard-topbar">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <button class="dashboard-mobile-toggle" aria-label="Toggle Dashboard Menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+          <h2>Patient Health Portal</h2>
+        </div>
+
+        <div class="topbar-actions">
+          <span class="badge badge-accent">
+            <span class="badge-dot"></span>
+            UHID: #STK-8492
+          </span>
+          <a href="index.html" class="btn btn-secondary btn-sm">Exit to Website</a>
+        </div>
+      </header>
+
+      <div class="dashboard-content">
+        <!-- Welcome Banner with Dynamic Gmail Username -->
+        <div class="welcome-banner">
+          <div>
+            <h1>Welcome back, <span class="dashboard-user-name">Valued Patient</span>!</h1>
+            <p>Your electronic medical chart is up-to-date. Next scheduled consultation is on Friday.</p>
+            <div class="welcome-badge-gmail">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline-block; vertical-align:-2px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Logged in as: <strong class="dashboard-user-email">patient@gmail.com</strong>
+            </div>
+          </div>
+          <a href="404.html" class="btn btn-accent btn-dashboard-action" style="background:#ffffff; color:var(--primary); font-weight:700;">
+            + Request Appointment
+          </a>
+        </div>
+
+        <!-- Metric Cards -->
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div>
+              <div class="metric-val">2</div>
+              <div class="metric-label">Upcoming Visits</div>
+            </div>
+          </div>
+
+          <div class="metric-card accent">
+            <div class="metric-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="9"/><line x1="7.5" y1="7.5" x2="16.5" y2="16.5"/></svg>
+            </div>
+            <div>
+              <div class="metric-val">4</div>
+              <div class="metric-label">Active Prescriptions</div>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.31M14 2v7.31M8.5 2h7M14 9.3a6.5 6.5 0 1 1-4 0M5.52 16h12.96"/></svg>
+            </div>
+            <div>
+              <div class="metric-val">3</div>
+              <div class="metric-label">Lab Reports Ready</div>
+            </div>
+          </div>
+
+          <div class="metric-card warning">
+            <div class="metric-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <div>
+              <div class="metric-val">98%</div>
+              <div class="metric-label">Health Score (Good)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 1: Appointments Schedule Table -->
+        <div class="card-section" id="appointments">
+          <div class="card-section-header">
+            <div>
+              <h3 class="card-section-title">My Scheduled Consultations</h3>
+              <p style="font-size: 0.9rem; margin-top: 2px;">Confirmed clinical visits with Stackly specialists</p>
+            </div>
+            <a href="404.html" class="btn btn-primary btn-sm btn-dashboard-action">+ Book New Slot</a>
+          </div>
+
+          <div class="data-table-wrapper">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Attending Doctor</th>
+                  <th>Department</th>
+                  <th>Date & Time</th>
+                  <th>Location / Room</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Dr. Naina Kulkarni</strong></td>
+                  <td>Cardiology</td>
+                  <td>Nov 02, 2026 - 10:30 AM</td>
+                  <td>Block B, OPD Suite 304</td>
+                  <td><span class="status-badge confirmed">Confirmed</span></td>
+                  <td><a href="404.html" class="btn btn-secondary btn-sm btn-dashboard-action">Reschedule</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Dr. Rohan Varma</strong></td>
+                  <td>Neurology Review</td>
+                  <td>Nov 14, 2026 - 02:00 PM</td>
+                  <td>Block A, Neuro OPD 112</td>
+                  <td><span class="status-badge pending">Pending Vitals</span></td>
+                  <td><a href="404.html" class="btn btn-secondary btn-sm btn-dashboard-action">Prepare Form</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Section 2: Active Prescriptions -->
+        <div class="card-section" id="prescriptions">
+          <div class="card-section-header">
+            <div>
+              <h3 class="card-section-title">Active Prescriptions & Dosages</h3>
+              <p style="font-size: 0.9rem; margin-top: 2px;">Filled and verified by Stackly Inpatient Pharmacy</p>
+            </div>
+            <a href="404.html" class="btn btn-secondary btn-sm btn-dashboard-action">Order Pharmacy Refill</a>
+          </div>
+
+          <div class="data-table-wrapper">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Medication</th>
+                  <th>Dosage</th>
+                  <th>Frequency</th>
+                  <th>Prescribed By</th>
+                  <th>Refill Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Atorvastatin Calcium</strong></td>
+                  <td>20 mg Oral Tablet</td>
+                  <td>Once Daily (Evening)</td>
+                  <td>Dr. Naina Kulkarni</td>
+                  <td><span class="status-badge active">2 Refills Remaining</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Metoprolol Tartrate</strong></td>
+                  <td>50 mg Extended Release</td>
+                  <td>Twice Daily with Meals</td>
+                  <td>Dr. Naina Kulkarni</td>
+                  <td><span class="status-badge active">1 Refill Remaining</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Neuro-B Complex</strong></td>
+                  <td>Capsule</td>
+                  <td>Daily Morning</td>
+                  <td>Dr. Rohan Varma</td>
+                  <td><span class="status-badge confirmed">Auto-Refill Active</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Section 3: Lab Test Results -->
+        <div class="card-section" id="reports">
+          <div class="card-section-header">
+            <div>
+              <h3 class="card-section-title">Diagnostic Pathology & Imaging Reports</h3>
+              <p style="font-size: 0.9rem; margin-top: 2px;">Electronic records verified by Chief Pathologist</p>
+            </div>
+            <a href="404.html" class="btn btn-secondary btn-sm btn-dashboard-action">Download All (PDF)</a>
+          </div>
+
+          <div class="data-table-wrapper">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Test Description</th>
+                  <th>Conducted Date</th>
+                  <th>Reference Range</th>
+                  <th>Clinical Status</th>
+                  <th>File</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Comprehensive Metabolic Panel (CMP)</strong></td>
+                  <td>Oct 24, 2026</td>
+                  <td>Optimal Biomarkers</td>
+                  <td><span class="status-badge completed">Normal</span></td>
+                  <td><a href="404.html" class="btn btn-secondary btn-sm btn-dashboard-action"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline-block; vertical-align:-2px; margin-right:4px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> View PDF</a></td>
+                </tr>
+                <tr>
+                  <td><strong>High-Resolution Cardiac Echo 2D</strong></td>
+                  <td>Oct 18, 2026</td>
+                  <td>Ejection Fraction 62%</td>
+                  <td><span class="status-badge completed">Normal</span></td>
+                  <td><a href="404.html" class="btn btn-secondary btn-sm btn-dashboard-action"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline-block; vertical-align:-2px; margin-right:4px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> View PDF</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Lipid Panel Profile</strong></td>
+                  <td>Sep 12, 2026</td>
+                  <td>LDL 88 mg/dL</td>
+                  <td><span class="status-badge completed">Normal</span></td>
+                  <td><a href="404.html" class="btn btn-secondary btn-sm btn-dashboard-action"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline-block; vertical-align:-2px; margin-right:4px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> View PDF</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

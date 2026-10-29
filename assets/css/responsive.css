@@ -1,0 +1,568 @@
+/* ==========================================================================
+   STACKLY HOSPITAL - COMPREHENSIVE RESPONSIVE STYLESHEET
+   Explicit Media Queries from 320px Screen to All Screens Separately
+   ========================================================================== */
+
+/* ==========================================================================
+   1. SMALL MOBILE SCREENS (320px to 480px)
+   ========================================================================== */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Header */
+  .header-inner {
+    height: 72px;
+  }
+
+  .site-logo img {
+    height: 36px;
+  }
+
+  .site-logo span,
+  .site-logo .logo-text {
+    font-size: 1.35rem;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .header-actions .btn {
+    display: none;
+  }
+
+  /* Small Screens (320px - 480px) Button Scaling */
+  .btn {
+    padding: 9px 18px;
+    font-size: 0.85rem;
+    gap: 6px;
+  }
+
+  .btn-sm {
+    padding: 6px 12px;
+    font-size: 0.78rem;
+    gap: 5px;
+  }
+
+  .btn-lg {
+    padding: 11px 20px;
+    font-size: 0.9rem;
+  }
+
+  .modal-submit-btn {
+    padding: 11px 16px;
+    font-size: 0.88rem;
+  }
+
+  .role-tab-btn {
+    padding: 7px 12px;
+    font-size: 0.82rem;
+  }
+
+  .auth-nav-link {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .mobile-nav-drawer {
+    top: 72px;
+    height: calc(100vh - 72px);
+    padding: 24px 16px;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 40px 0 60px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .hero-headline {
+    font-size: 2.2rem;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .hero-stats-row {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .stat-num {
+    font-size: 1.6rem;
+  }
+
+  .hero-image-container img {
+    height: 320px;
+  }
+
+  .hero-float-card {
+    position: static;
+    margin-top: 16px;
+    max-width: 100%;
+  }
+
+  /* About Intro Section */
+  .about-intro-section {
+    padding: 60px 0;
+  }
+
+  .about-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .about-main-img {
+    height: 280px;
+  }
+
+  /* Services Grid */
+  .services-section {
+    padding: 60px 0;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Process Section */
+  .process-section {
+    padding: 60px 0;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .process-step-item {
+    flex-direction: column;
+    gap: 14px;
+    padding: 16px;
+  }
+
+  .process-media img {
+    height: 300px;
+  }
+
+  /* Doctors Grid */
+  .doctors-section {
+    padding: 60px 0;
+  }
+
+  .doctors-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .doctor-thumb {
+    height: 280px;
+  }
+
+  /* Testimonials */
+  .testimonials-section {
+    padding: 60px 0;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Helpline CTA */
+  .cta-helpline-section {
+    padding: 50px 0;
+  }
+
+  .cta-helpline-box {
+    padding: 30px 20px;
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .phone-link {
+    font-size: 1.4rem;
+    justify-content: center;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding: 60px 0 24px;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .footer-appointment-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 16px;
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  /* Forms & Modal */
+  .modal-card {
+    padding: 28px 18px;
+    border-radius: 20px;
+  }
+
+  .modal-title {
+    font-size: 1.45rem;
+  }
+
+  .modal-close {
+    top: 16px;
+    right: 16px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .form-row-2 {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .form-control {
+    padding: 12px 14px;
+    font-size: 0.95rem;
+  }
+
+  .modal-submit-btn {
+    padding: 14px 18px;
+    font-size: 0.95rem;
+  }
+}
+
+/* ==========================================================================
+   2. LARGE MOBILE & MOBILE LANDSCAPE (481px to 767px)
+   ========================================================================== */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 15px;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header-inner {
+    height: 80px;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .header-actions .btn {
+    display: none;
+  }
+
+  /* Medium Mobile / Small Tablet (481px - 767px) Button Scaling */
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.88rem;
+    gap: 8px;
+  }
+
+  .btn-sm {
+    padding: 7px 14px;
+    font-size: 0.82rem;
+    gap: 6px;
+  }
+
+  .role-tab-btn {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .mobile-nav-drawer {
+    top: 80px;
+    height: calc(100vh - 80px);
+  }
+
+  .hero-section {
+    padding: 50px 0 70px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-headline {
+    font-size: 2.6rem;
+  }
+
+  .hero-image-container img {
+    height: 400px;
+  }
+
+  .about-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-main-img {
+    height: 340px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .process-media img {
+    height: 380px;
+  }
+
+  .doctors-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-helpline-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 24px;
+  }
+
+  .phone-link {
+    justify-content: center;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .footer-appointment-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form-row-2 {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .modal-card {
+    padding: 32px 24px;
+    border-radius: 24px;
+  }
+}
+
+/* ==========================================================================
+   3. TABLETS (768px to 991px)
+   ========================================================================== */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .hero-image-container img {
+    height: 460px;
+  }
+
+  .about-intro-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .process-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 36px;
+  }
+
+  .doctors-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .cta-helpline-box {
+    padding: 48px 32px;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+  }
+}
+
+/* ==========================================================================
+   4. SMALL DESKTOPS & LAPTOPS (992px to 1199px)
+   ========================================================================== */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .main-nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  .mobile-toggle {
+    display: none;
+  }
+
+  .hero-headline {
+    font-size: 3.2rem;
+  }
+
+  .hero-image-container img {
+    height: 480px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .doctors-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+    gap: 30px;
+  }
+}
+
+/* ==========================================================================
+   5. STANDARD DESKTOPS (1200px to 1440px)
+   ========================================================================== */
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .main-nav {
+    display: flex;
+    gap: 32px;
+  }
+
+  .mobile-toggle {
+    display: none;
+  }
+
+  .hero-headline {
+    font-size: 3.8rem;
+  }
+
+  .hero-image-container img {
+    height: 540px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+
+  .doctors-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+
+/* ==========================================================================
+   6. LARGE SCREENS & ULTRAWIDE (1441px and above)
+   ========================================================================== */
+@media screen and (min-width: 1441px) {
+  :root {
+    --max-width: 1380px;
+  }
+
+  html {
+    font-size: 17px;
+  }
+
+  .hero-headline {
+    font-size: 4.4rem;
+  }
+
+  .hero-image-container img {
+    height: 600px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+
+  .doctors-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+  }
+}
